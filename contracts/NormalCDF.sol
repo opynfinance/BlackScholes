@@ -2,16 +2,18 @@
  * CDF contract. Copyright © 2020 by Opyn.co .
  * Author: Aparna Krishnan <aparna@opyn.co>
  */
-pragma solidity 0.6.8;
+pragma solidity 0.5.16;
 
-import "./lib/ABDKMath64x64.sol";
+// import { SignedSafeMath } from "@openzeppelin/contracts/math/SignedSafeMath.sol";
+import "./SafeSignedFloatMath.sol";
 
 contract NormalCDF {
+    using SafeSignedFloatMath for int256;
+
     /**
      * Initialise the Normal CDF
      */
-
-    uint128[81] cdfValues = [
+    int256[81] cdfValues = [
         0.00003 * 1e18,
         0.00005 * 1e18,
         0.00007 * 1e18,
@@ -101,9 +103,21 @@ contract NormalCDF {
     constructor() public {}
 
     /**
-     * @notice this function returns the cdf for the normal dist
+     * @notice this function returns the cdf for the normal dist. It returns the probability that a statistic is between -infinity and the given input z.
+     * @param z. Using Maker's ds-math everywhere. So z is a wad i.e. scaled by 1e18.
      */
-    function N(uint128 key) external returns (uint128) {
-        return cdfValues[key];
+    function N(int256 z) external returns (int256) {
+        // 1. if z is really small return 0, if z is really large, return 1.
+        if (z < -4 * 1e18) {
+            return 0;
+        } else if (z > 4 * 1e18) {
+            return 1;
+        }
+
+        // 2. if z is {-4.0, -3.9 .. , 4.0}
+        int256 index = z.add(4 * 1e18).div(1e16);
+        // 3. if z is in between one of these, round up or down.
+
+        return 0;
     }
 }

@@ -1,0 +1,4 @@
+diff a/contracts/NormalCDF.sol b/contracts/NormalCDF.sol	(rejected hunks)
+@@ -47 +107 @@ contract NormalCDF {
+-        return cdfValues[key]
++        return cdfValues[key];

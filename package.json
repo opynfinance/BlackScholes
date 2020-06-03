@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Black Scholes Calculator",
   "devDependencies": {
-    "@openzeppelin/contracts": "2.4.0",
+    "@nomiclabs/buidler": "^1.3.5",
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^2.4.0",
     "@openzeppelin/test-helpers": "^0.5.4",
     "@types/chai": "4.2.5",
     "@typescript-eslint/eslint-plugin": "^2.9.0",

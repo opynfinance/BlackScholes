@@ -2,6 +2,7 @@
   "contractName": "BlackScholes",
   "abi": [
     {
+      "constant": false,
       "inputs": [],
       "name": "blackScholes",
       "outputs": [
@@ -11,85 +12,100 @@
           "type": "uint256"
         }
       ],
+      "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"blackScholes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":\"BlackScholes\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":{\"keccak256\":\"0x571ef882a4547deb3e850ccf66d69c7a1210f4cce0ec3f03c20d29998141bbd1\",\"urls\":[\"bzz-raw://1e8caa9f02e7b38be657f541684a74346e9264241c9dbc8ce13da7ea741478dc\",\"dweb:/ipfs/QmaEY6rRBEKZivqPHPup33UNTVBRiSq5KAj8XzEbR9P7Rs\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b5060848061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60009056fea2646970667358221220833fd79b31a9e06c61687a22885c1da59014d979adfa671e701a9cc7b471dde364736f6c63430006080033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60009056fea2646970667358221220833fd79b31a9e06c61687a22885c1da59014d979adfa671e701a9cc7b471dde364736f6c63430006080033",
-  "immutableReferences": {},
-  "sourceMap": "139:510:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;139:510:0;;;;;;;",
-  "deployedSourceMap": "139:510:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;139:510:0;;;;;;;;;;;;;;;;12:1:-1;9;2:12;571:69:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;614:7;571:69;:::o",
-  "source": "/*\n * Opyn's Black Scholes library. Copyright © 2020 by Opyn.co .\n * Author: Aparna Krishnan <aparna@opyn.co>\n */\npragma solidity 0.6.8;\n\ncontract BlackScholes { \n    \n\n    /**\n     * @notice This function returns the d1 value in the black scholes equation\n     * @param T is the time to expiry \n     * @param S is the current spot price of the asset\n     * @param K is the current strike price of the asset\n     * \n     */\n\n    function d1 (int128 T, int128 S, int128 K) internal returns (uint256) {\n\n    }\n\n    function d2 () internal returns (uint256) { \n\n    }\n\n    function blackScholes () external returns (uint256) { \n        \n    }\n\n\n    \n} ",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"blackScholes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":\"BlackScholes\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":{\"keccak256\":\"0x17c4a63ea1211651e018e9c48481e69cae6d44d25f516ea4cfdb2a486e522cb9\",\"urls\":[\"bzz-raw://33036f744b6373bd8764fceb1e21a2cb67445f73640ff4460f4f88062b84d184\",\"dweb:/ipfs/QmPVZkcEtUi4nQoTC1r6m4tJmCQYHmaMMU9HTycjE2bPnb\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060868061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60008090509056fea265627a7a72315820daac523bb39157307b7c34dd2e87df85fad767fd0c81439c55c75437b29c532e64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60008090509056fea265627a7a72315820daac523bb39157307b7c34dd2e87df85fad767fd0c81439c55c75437b29c532e64736f6c63430005100032",
+  "sourceMap": "140:519:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:519:0;;;;;;;",
+  "deployedSourceMap": "140:519:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:519:0;;;;;;;;;;;;;;;;;;;595:62;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;637:7;654:1;647:8;;595:62;:::o",
+  "source": "/*\n * Opyn's Black Scholes library. Copyright © 2020 by Opyn.co .\n * Author: Aparna Krishnan <aparna@opyn.co>\n */\npragma solidity 0.5.16;\n\ncontract BlackScholes {\n    /**\n     * @notice This function returns the d1 value in the black scholes equation\n     * @param T is the time to expiry\n     * @param S is the current spot price of the asset\n     * @param K is the current strike price of the asset\n     *\n     */\n\n    function d1(\n        int128 T,\n        int128 S,\n        int128 K\n    ) internal returns (uint256) {return 0;}\n    function d2() internal returns (uint256) {return 0;}\n\n    function blackScholes() external returns (uint256) {return 0;}\n}\n",
   "sourcePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol",
   "ast": {
     "absolutePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol",
     "exportedSymbols": {
       "BlackScholes": [
-        27
+        32
       ]
     },
-    "id": 28,
-    "license": null,
+    "id": 33,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
         "literals": [
           "solidity",
-          "0.6",
-          ".8"
+          "0.5",
+          ".16"
         ],
         "nodeType": "PragmaDirective",
-        "src": "115:22:0"
+        "src": "115:23:0"
       },
       {
-        "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 27,
+        "id": 32,
         "linearizedBaseContracts": [
-          27
+          32
         ],
         "name": "BlackScholes",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 13,
+              "id": 14,
               "nodeType": "Block",
-              "src": "500:8:0",
-              "statements": []
+              "src": "521:11:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "529:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 11,
+                  "id": 13,
+                  "nodeType": "Return",
+                  "src": "522:8:0"
+                }
+              ]
             },
-            "documentation": {
-              "id": 2,
-              "nodeType": "StructuredDocumentation",
-              "src": "174:250:0",
-              "text": "@notice This function returns the d1 value in the black scholes equation\n@param T is the time to expiry \n@param S is the current spot price of the asset\n@param K is the current strike price of the asset\n\n     "
-            },
-            "id": 14,
+            "documentation": "@notice This function returns the d1 value in the black scholes equation\n@param T is the time to expiry\n@param S is the current spot price of the asset\n@param K is the current strike price of the asset\n     ",
+            "id": 15,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "d1",
             "nodeType": "FunctionDefinition",
-            "overrides": null,
             "parameters": {
-              "id": 9,
+              "id": 8,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4,
-                  "mutability": "mutable",
+                  "id": 3,
                   "name": "T",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
+                  "scope": 15,
                   "src": "443:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -98,7 +114,7 @@
                     "typeString": "int128"
                   },
                   "typeName": {
-                    "id": 3,
+                    "id": 2,
                     "name": "int128",
                     "nodeType": "ElementaryTypeName",
                     "src": "443:6:0",
@@ -112,13 +128,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6,
-                  "mutability": "mutable",
+                  "id": 5,
                   "name": "S",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
-                  "src": "453:8:0",
+                  "scope": 15,
+                  "src": "461:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -126,10 +140,10 @@
                     "typeString": "int128"
                   },
                   "typeName": {
-                    "id": 5,
+                    "id": 4,
                     "name": "int128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "453:6:0",
+                    "src": "461:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int128",
                       "typeString": "int128"
@@ -140,13 +154,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 8,
-                  "mutability": "mutable",
+                  "id": 7,
                   "name": "K",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
-                  "src": "463:8:0",
+                  "scope": 15,
+                  "src": "479:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -154,10 +166,10 @@
                     "typeString": "int128"
                   },
                   "typeName": {
-                    "id": 7,
+                    "id": 6,
                     "name": "int128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "463:6:0",
+                    "src": "479:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int128",
                       "typeString": "int128"
@@ -167,21 +179,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "442:30:0"
+              "src": "433:60:0"
             },
             "returnParameters": {
-              "id": 12,
+              "id": 11,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11,
-                  "mutability": "mutable",
+                  "id": 10,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
-                  "src": "491:7:0",
+                  "scope": 15,
+                  "src": "512:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -189,10 +199,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10,
+                    "id": 9,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "491:7:0",
+                    "src": "512:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -202,48 +212,70 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "490:9:0"
+              "src": "511:9:0"
             },
-            "scope": 27,
-            "src": "430:78:0",
+            "scope": 32,
+            "src": "422:110:0",
             "stateMutability": "nonpayable",
-            "virtual": false,
+            "superFunction": null,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 19,
+              "id": 22,
               "nodeType": "Block",
-              "src": "556:9:0",
-              "statements": []
+              "src": "578:11:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 20,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "586:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 19,
+                  "id": 21,
+                  "nodeType": "Return",
+                  "src": "579:8:0"
+                }
+              ]
             },
             "documentation": null,
-            "id": 20,
+            "id": 23,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "d2",
             "nodeType": "FunctionDefinition",
-            "overrides": null,
             "parameters": {
-              "id": 15,
+              "id": 16,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "526:2:0"
+              "src": "548:2:0"
             },
             "returnParameters": {
-              "id": 18,
+              "id": 19,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 17,
-                  "mutability": "mutable",
+                  "id": 18,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 20,
-                  "src": "547:7:0",
+                  "scope": 23,
+                  "src": "569:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -251,10 +283,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 16,
+                    "id": 17,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "547:7:0",
+                    "src": "569:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -264,49 +296,70 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "546:9:0"
+              "src": "568:9:0"
             },
-            "scope": 27,
-            "src": "514:51:0",
+            "scope": 32,
+            "src": "537:52:0",
             "stateMutability": "nonpayable",
-            "virtual": false,
+            "superFunction": null,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 25,
+              "id": 30,
               "nodeType": "Block",
-              "src": "623:17:0",
-              "statements": []
+              "src": "646:11:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 28,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "654:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 27,
+                  "id": 29,
+                  "nodeType": "Return",
+                  "src": "647:8:0"
+                }
+              ]
             },
             "documentation": null,
-            "functionSelector": "3c195aa7",
-            "id": 26,
+            "id": 31,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "blackScholes",
             "nodeType": "FunctionDefinition",
-            "overrides": null,
             "parameters": {
-              "id": 21,
+              "id": 24,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "593:2:0"
+              "src": "616:2:0"
             },
             "returnParameters": {
-              "id": 24,
+              "id": 27,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 23,
-                  "mutability": "mutable",
+                  "id": 26,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 26,
-                  "src": "614:7:0",
+                  "scope": 31,
+                  "src": "637:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -314,10 +367,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 22,
+                    "id": 25,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "614:7:0",
+                    "src": "637:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -327,88 +380,103 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "613:9:0"
+              "src": "636:9:0"
             },
-            "scope": 27,
-            "src": "571:69:0",
+            "scope": 32,
+            "src": "595:62:0",
             "stateMutability": "nonpayable",
-            "virtual": false,
+            "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 28,
-        "src": "139:510:0"
+        "scope": 33,
+        "src": "140:519:0"
       }
     ],
-    "src": "115:535:0"
+    "src": "115:545:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol",
     "exportedSymbols": {
       "BlackScholes": [
-        27
+        32
       ]
     },
-    "id": 28,
-    "license": null,
+    "id": 33,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
         "literals": [
           "solidity",
-          "0.6",
-          ".8"
+          "0.5",
+          ".16"
         ],
         "nodeType": "PragmaDirective",
-        "src": "115:22:0"
+        "src": "115:23:0"
       },
       {
-        "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 27,
+        "id": 32,
         "linearizedBaseContracts": [
-          27
+          32
         ],
         "name": "BlackScholes",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 13,
+              "id": 14,
               "nodeType": "Block",
-              "src": "500:8:0",
-              "statements": []
+              "src": "521:11:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "529:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 11,
+                  "id": 13,
+                  "nodeType": "Return",
+                  "src": "522:8:0"
+                }
+              ]
             },
-            "documentation": {
-              "id": 2,
-              "nodeType": "StructuredDocumentation",
-              "src": "174:250:0",
-              "text": "@notice This function returns the d1 value in the black scholes equation\n@param T is the time to expiry \n@param S is the current spot price of the asset\n@param K is the current strike price of the asset\n\n     "
-            },
-            "id": 14,
+            "documentation": "@notice This function returns the d1 value in the black scholes equation\n@param T is the time to expiry\n@param S is the current spot price of the asset\n@param K is the current strike price of the asset\n     ",
+            "id": 15,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "d1",
             "nodeType": "FunctionDefinition",
-            "overrides": null,
             "parameters": {
-              "id": 9,
+              "id": 8,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4,
-                  "mutability": "mutable",
+                  "id": 3,
                   "name": "T",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
+                  "scope": 15,
                   "src": "443:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -417,7 +485,7 @@
                     "typeString": "int128"
                   },
                   "typeName": {
-                    "id": 3,
+                    "id": 2,
                     "name": "int128",
                     "nodeType": "ElementaryTypeName",
                     "src": "443:6:0",
@@ -431,13 +499,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6,
-                  "mutability": "mutable",
+                  "id": 5,
                   "name": "S",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
-                  "src": "453:8:0",
+                  "scope": 15,
+                  "src": "461:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -445,10 +511,10 @@
                     "typeString": "int128"
                   },
                   "typeName": {
-                    "id": 5,
+                    "id": 4,
                     "name": "int128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "453:6:0",
+                    "src": "461:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int128",
                       "typeString": "int128"
@@ -459,13 +525,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 8,
-                  "mutability": "mutable",
+                  "id": 7,
                   "name": "K",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
-                  "src": "463:8:0",
+                  "scope": 15,
+                  "src": "479:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -473,10 +537,10 @@
                     "typeString": "int128"
                   },
                   "typeName": {
-                    "id": 7,
+                    "id": 6,
                     "name": "int128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "463:6:0",
+                    "src": "479:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int128",
                       "typeString": "int128"
@@ -486,21 +550,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "442:30:0"
+              "src": "433:60:0"
             },
             "returnParameters": {
-              "id": 12,
+              "id": 11,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11,
-                  "mutability": "mutable",
+                  "id": 10,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 14,
-                  "src": "491:7:0",
+                  "scope": 15,
+                  "src": "512:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -508,10 +570,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10,
+                    "id": 9,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "491:7:0",
+                    "src": "512:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -521,48 +583,70 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "490:9:0"
+              "src": "511:9:0"
             },
-            "scope": 27,
-            "src": "430:78:0",
+            "scope": 32,
+            "src": "422:110:0",
             "stateMutability": "nonpayable",
-            "virtual": false,
+            "superFunction": null,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 19,
+              "id": 22,
               "nodeType": "Block",
-              "src": "556:9:0",
-              "statements": []
+              "src": "578:11:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 20,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "586:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 19,
+                  "id": 21,
+                  "nodeType": "Return",
+                  "src": "579:8:0"
+                }
+              ]
             },
             "documentation": null,
-            "id": 20,
+            "id": 23,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "d2",
             "nodeType": "FunctionDefinition",
-            "overrides": null,
             "parameters": {
-              "id": 15,
+              "id": 16,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "526:2:0"
+              "src": "548:2:0"
             },
             "returnParameters": {
-              "id": 18,
+              "id": 19,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 17,
-                  "mutability": "mutable",
+                  "id": 18,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 20,
-                  "src": "547:7:0",
+                  "scope": 23,
+                  "src": "569:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -570,10 +654,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 16,
+                    "id": 17,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "547:7:0",
+                    "src": "569:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -583,49 +667,70 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "546:9:0"
+              "src": "568:9:0"
             },
-            "scope": 27,
-            "src": "514:51:0",
+            "scope": 32,
+            "src": "537:52:0",
             "stateMutability": "nonpayable",
-            "virtual": false,
+            "superFunction": null,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 25,
+              "id": 30,
               "nodeType": "Block",
-              "src": "623:17:0",
-              "statements": []
+              "src": "646:11:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30",
+                    "id": 28,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "654:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "functionReturnParameters": 27,
+                  "id": 29,
+                  "nodeType": "Return",
+                  "src": "647:8:0"
+                }
+              ]
             },
             "documentation": null,
-            "functionSelector": "3c195aa7",
-            "id": 26,
+            "id": 31,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "blackScholes",
             "nodeType": "FunctionDefinition",
-            "overrides": null,
             "parameters": {
-              "id": 21,
+              "id": 24,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "593:2:0"
+              "src": "616:2:0"
             },
             "returnParameters": {
-              "id": 24,
+              "id": 27,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 23,
-                  "mutability": "mutable",
+                  "id": 26,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "overrides": null,
-                  "scope": 26,
-                  "src": "614:7:0",
+                  "scope": 31,
+                  "src": "637:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -633,10 +738,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 22,
+                    "id": 25,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "614:7:0",
+                    "src": "637:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -646,28 +751,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "613:9:0"
+              "src": "636:9:0"
             },
-            "scope": 27,
-            "src": "571:69:0",
+            "scope": 32,
+            "src": "595:62:0",
             "stateMutability": "nonpayable",
-            "virtual": false,
+            "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 28,
-        "src": "139:510:0"
+        "scope": 33,
+        "src": "140:519:0"
       }
     ],
-    "src": "115:535:0"
+    "src": "115:545:0"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.6.8+commit.0bbfe453.Emscripten.clang"
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-06-01T14:46:56.381Z",
+  "updatedAt": "2020-06-02T23:24:12.221Z",
   "devdoc": {
     "methods": {}
   },

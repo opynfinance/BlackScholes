@@ -1,0 +1,27 @@
+diff a/contracts/Migrations.sol b/contracts/Migrations.sol	(rejected hunks)
+@@ -4,2 +4,2 @@ contract Migrations {
+-  address public owner;
+-  uint public last_completed_migration;
++    address public owner;
++    uint256 public last_completed_migration;
+@@ -7,3 +7,3 @@ contract Migrations {
+-  constructor() public {
+-    owner = msg.sender;
+-  }
++    constructor() public {
++        owner = msg.sender;
++    }
+@@ -11,3 +11,3 @@ contract Migrations {
+-  modifier restricted() {
+-    if (msg.sender == owner) _;
+-  }
++    modifier restricted() {
++        if (msg.sender == owner) _;
++    }
+@@ -15,3 +15,3 @@ contract Migrations {
+-  function setCompleted(uint completed) public restricted {
+-    last_completed_migration = completed;
+-  }
++    function setCompleted(uint256 completed) public restricted {
++        last_completed_migration = completed;
++    }

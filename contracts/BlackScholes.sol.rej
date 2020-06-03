@@ -1,0 +1,35 @@
+diff a/contracts/BlackScholes.sol b/contracts/BlackScholes.sol	(rejected hunks)
+@@ -7,3 +7 @@ pragma solidity 0.6.8;
+-contract BlackScholes { 
+-    
+-
++contract BlackScholes {
+@@ -12 +10 @@ contract BlackScholes {
+-     * @param T is the time to expiry 
++     * @param T is the time to expiry
+@@ -15 +13 @@ contract BlackScholes {
+-     * 
++     *
+@@ -18,11 +16,5 @@ contract BlackScholes {
+-    function d1 (int128 T, int128 S, int128 K) internal returns (uint256) {
+-
+-    }
+-
+-    function d2 () internal returns (uint256) { 
+-
+-    }
+-
+-    function blackScholes () external returns (uint256) { 
+-        
+-    }
++    function d1(
++        int128 T,
++        int128 S,
++        int128 K
++    ) internal returns (uint256) {}
+@@ -31,2 +24,2 @@ contract BlackScholes {
+-    
+-} 
+\ No newline at end of file
++    function blackScholes() external returns (uint256) {}
++}

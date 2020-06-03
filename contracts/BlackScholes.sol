@@ -2,7 +2,7 @@
  * Opyn's Black Scholes library. Copyright © 2020 by Opyn.co .
  * Author: Aparna Krishnan <aparna@opyn.co>
  */
-pragma solidity 0.6.8;
+pragma solidity 0.5.16;
 
 contract BlackScholes {
     /**
@@ -17,9 +17,15 @@ contract BlackScholes {
         int128 T,
         int128 S,
         int128 K
-    ) internal returns (uint256) {}
+    ) internal returns (uint256) {
+        return 0;
+    }
 
-    function d2() internal returns (uint256) {}
+    function d2() internal returns (uint256) {
+        return 0;
+    }
 
-    function blackScholes() external returns (uint256) {}
+    function blackScholes() external returns (uint256) {
+        return 0;
+    }
 }
