@@ -17,12 +17,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"blackScholes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":\"BlackScholes\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":{\"keccak256\":\"0x17c4a63ea1211651e018e9c48481e69cae6d44d25f516ea4cfdb2a486e522cb9\",\"urls\":[\"bzz-raw://33036f744b6373bd8764fceb1e21a2cb67445f73640ff4460f4f88062b84d184\",\"dweb:/ipfs/QmPVZkcEtUi4nQoTC1r6m4tJmCQYHmaMMU9HTycjE2bPnb\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b5060868061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60008090509056fea265627a7a72315820daac523bb39157307b7c34dd2e87df85fad767fd0c81439c55c75437b29c532e64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60008090509056fea265627a7a72315820daac523bb39157307b7c34dd2e87df85fad767fd0c81439c55c75437b29c532e64736f6c63430005100032",
-  "sourceMap": "140:519:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:519:0;;;;;;;",
-  "deployedSourceMap": "140:519:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:519:0;;;;;;;;;;;;;;;;;;;595:62;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;637:7;654:1;647:8;;595:62;:::o",
-  "source": "/*\n * Opyn's Black Scholes library. Copyright © 2020 by Opyn.co .\n * Author: Aparna Krishnan <aparna@opyn.co>\n */\npragma solidity 0.5.16;\n\ncontract BlackScholes {\n    /**\n     * @notice This function returns the d1 value in the black scholes equation\n     * @param T is the time to expiry\n     * @param S is the current spot price of the asset\n     * @param K is the current strike price of the asset\n     *\n     */\n\n    function d1(\n        int128 T,\n        int128 S,\n        int128 K\n    ) internal returns (uint256) {return 0;}\n    function d2() internal returns (uint256) {return 0;}\n\n    function blackScholes() external returns (uint256) {return 0;}\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"blackScholes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":\"BlackScholes\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol\":{\"keccak256\":\"0xa5cb3920a9ee31d938434c09b18c861b4c529b2027904f4df29d8b6bdef4fd63\",\"urls\":[\"bzz-raw://4a494dfeca98cd98240e0b619c6a69e47d32dd14980bda14022f422a25bf39db\",\"dweb:/ipfs/QmS1CtivZb1PZytfNhuE6ckacgKHXFdRjyGms2C8UX4MZQ\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060868061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60008090509056fea265627a7a723158203bb1c8a544a5b67458acf03dc972d6ed65179659e2489d4b347fe9f56076d5fb64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80633c195aa714602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60008090509056fea265627a7a723158203bb1c8a544a5b67458acf03dc972d6ed65179659e2489d4b347fe9f56076d5fb64736f6c63430005100032",
+  "sourceMap": "140:562:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:562:0;;;;;;;",
+  "deployedSourceMap": "140:562:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;140:562:0;;;;;;;;;;;;;;;;;;;624:76;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;666:7;692:1;685:8;;624:76;:::o",
+  "source": "/*\n * Opyn's Black Scholes library. Copyright © 2020 by Opyn.co .\n * Author: Aparna Krishnan <aparna@opyn.co>\n */\npragma solidity 0.5.16;\n\ncontract BlackScholes {\n    /**\n     * @notice This function returns the d1 value in the black scholes equation\n     * @param T is the time to expiry\n     * @param S is the current spot price of the asset\n     * @param K is the current strike price of the asset\n     *\n     */\n\n    function d1(\n        int128 T,\n        int128 S,\n        int128 K\n    ) internal returns (uint256) {\n        return 0;\n    }\n\n    function d2() internal returns (uint256) {\n        return 0;\n    }\n\n    function blackScholes() external returns (uint256) {\n        return 0;\n    }\n}\n",
   "sourcePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol",
   "ast": {
     "absolutePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol",
@@ -61,7 +61,7 @@
             "body": {
               "id": 14,
               "nodeType": "Block",
-              "src": "521:11:0",
+              "src": "521:25:0",
               "statements": [
                 {
                   "expression": {
@@ -74,7 +74,7 @@
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "529:1:0",
+                    "src": "538:1:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
@@ -85,7 +85,7 @@
                   "functionReturnParameters": 11,
                   "id": 13,
                   "nodeType": "Return",
-                  "src": "522:8:0"
+                  "src": "531:8:0"
                 }
               ]
             },
@@ -215,7 +215,7 @@
               "src": "511:9:0"
             },
             "scope": 32,
-            "src": "422:110:0",
+            "src": "422:124:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
@@ -224,7 +224,7 @@
             "body": {
               "id": 22,
               "nodeType": "Block",
-              "src": "578:11:0",
+              "src": "593:25:0",
               "statements": [
                 {
                   "expression": {
@@ -237,7 +237,7 @@
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "586:1:0",
+                    "src": "610:1:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
@@ -248,7 +248,7 @@
                   "functionReturnParameters": 19,
                   "id": 21,
                   "nodeType": "Return",
-                  "src": "579:8:0"
+                  "src": "603:8:0"
                 }
               ]
             },
@@ -263,7 +263,7 @@
               "id": 16,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "548:2:0"
+              "src": "563:2:0"
             },
             "returnParameters": {
               "id": 19,
@@ -275,7 +275,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 23,
-                  "src": "569:7:0",
+                  "src": "584:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -286,7 +286,7 @@
                     "id": 17,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "569:7:0",
+                    "src": "584:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -296,10 +296,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "568:9:0"
+              "src": "583:9:0"
             },
             "scope": 32,
-            "src": "537:52:0",
+            "src": "552:66:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
@@ -308,7 +308,7 @@
             "body": {
               "id": 30,
               "nodeType": "Block",
-              "src": "646:11:0",
+              "src": "675:25:0",
               "statements": [
                 {
                   "expression": {
@@ -321,7 +321,7 @@
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "654:1:0",
+                    "src": "692:1:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
@@ -332,7 +332,7 @@
                   "functionReturnParameters": 27,
                   "id": 29,
                   "nodeType": "Return",
-                  "src": "647:8:0"
+                  "src": "685:8:0"
                 }
               ]
             },
@@ -347,7 +347,7 @@
               "id": 24,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "616:2:0"
+              "src": "645:2:0"
             },
             "returnParameters": {
               "id": 27,
@@ -359,7 +359,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "637:7:0",
+                  "src": "666:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -370,7 +370,7 @@
                     "id": 25,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "637:7:0",
+                    "src": "666:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -380,20 +380,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "636:9:0"
+              "src": "665:9:0"
             },
             "scope": 32,
-            "src": "595:62:0",
+            "src": "624:76:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
         "scope": 33,
-        "src": "140:519:0"
+        "src": "140:562:0"
       }
     ],
-    "src": "115:545:0"
+    "src": "115:588:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/BlackScholes.sol",
@@ -432,7 +432,7 @@
             "body": {
               "id": 14,
               "nodeType": "Block",
-              "src": "521:11:0",
+              "src": "521:25:0",
               "statements": [
                 {
                   "expression": {
@@ -445,7 +445,7 @@
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "529:1:0",
+                    "src": "538:1:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
@@ -456,7 +456,7 @@
                   "functionReturnParameters": 11,
                   "id": 13,
                   "nodeType": "Return",
-                  "src": "522:8:0"
+                  "src": "531:8:0"
                 }
               ]
             },
@@ -586,7 +586,7 @@
               "src": "511:9:0"
             },
             "scope": 32,
-            "src": "422:110:0",
+            "src": "422:124:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
@@ -595,7 +595,7 @@
             "body": {
               "id": 22,
               "nodeType": "Block",
-              "src": "578:11:0",
+              "src": "593:25:0",
               "statements": [
                 {
                   "expression": {
@@ -608,7 +608,7 @@
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "586:1:0",
+                    "src": "610:1:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
@@ -619,7 +619,7 @@
                   "functionReturnParameters": 19,
                   "id": 21,
                   "nodeType": "Return",
-                  "src": "579:8:0"
+                  "src": "603:8:0"
                 }
               ]
             },
@@ -634,7 +634,7 @@
               "id": 16,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "548:2:0"
+              "src": "563:2:0"
             },
             "returnParameters": {
               "id": 19,
@@ -646,7 +646,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 23,
-                  "src": "569:7:0",
+                  "src": "584:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -657,7 +657,7 @@
                     "id": 17,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "569:7:0",
+                    "src": "584:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -667,10 +667,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "568:9:0"
+              "src": "583:9:0"
             },
             "scope": 32,
-            "src": "537:52:0",
+            "src": "552:66:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
@@ -679,7 +679,7 @@
             "body": {
               "id": 30,
               "nodeType": "Block",
-              "src": "646:11:0",
+              "src": "675:25:0",
               "statements": [
                 {
                   "expression": {
@@ -692,7 +692,7 @@
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "654:1:0",
+                    "src": "692:1:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
@@ -703,7 +703,7 @@
                   "functionReturnParameters": 27,
                   "id": 29,
                   "nodeType": "Return",
-                  "src": "647:8:0"
+                  "src": "685:8:0"
                 }
               ]
             },
@@ -718,7 +718,7 @@
               "id": 24,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "616:2:0"
+              "src": "645:2:0"
             },
             "returnParameters": {
               "id": 27,
@@ -730,7 +730,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 31,
-                  "src": "637:7:0",
+                  "src": "666:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -741,7 +741,7 @@
                     "id": 25,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "637:7:0",
+                    "src": "666:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -751,28 +751,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "636:9:0"
+              "src": "665:9:0"
             },
             "scope": 32,
-            "src": "595:62:0",
+            "src": "624:76:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
         "scope": 33,
-        "src": "140:519:0"
+        "src": "140:562:0"
       }
     ],
-    "src": "115:545:0"
+    "src": "115:588:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.2.0",
-  "updatedAt": "2020-06-02T23:24:12.221Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2020-06-03T20:27:56.302Z",
   "devdoc": {
     "methods": {}
   },

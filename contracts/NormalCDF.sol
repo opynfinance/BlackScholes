@@ -120,4 +120,6 @@ contract NormalCDF {
 
         return 0;
     }
+
+    function L() public {}
 }

@@ -1,12 +1,143 @@
 {
   "contractName": "MockSafeSignedFloatMath",
-  "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/MockSafeSignedFloatMath.sol\":\"MockSafeSignedFloatMath\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/MockSafeSignedFloatMath.sol\":{\"keccak256\":\"0x4098f26f57d12e26a1b35dfe3bfec64372fe4379e3b2a785cb13b5cb47a05886\",\"urls\":[\"bzz-raw://5823e31ce81fb0ab6957ee87c849a81b100ad3619676b574a7b1093de389d24d\",\"dweb:/ipfs/QmSED2BH3trs3QeJpZXYACyXunHvuQWMFffJ4RK4BPRYaf\"]},\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/SafeSignedFloatMath.sol\":{\"keccak256\":\"0x65ea782ca1da3c81b089dbfe4290bb6291763dd47571d012201a88394bf9e9dc\",\"urls\":[\"bzz-raw://a709f62e860bc46bbeb834b7ba433cda2f61092f8ebc732d72a1deb2896ea2f6\",\"dweb:/ipfs/QmVewdSLzRDk1GTQhh8VWyUZWd5UQAUtprT4Hs3Grky8Xj\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820d34536ad5fb17131eef533b21f699cdd0c8bac4947683486903bcd0a1f67800f64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820d34536ad5fb17131eef533b21f699cdd0c8bac4947683486903bcd0a1f67800f64736f6c63430005100032",
-  "sourceMap": "161:1030:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:1030:2;;;;;;;",
-  "deployedSourceMap": "161:1030:2:-;;;;;",
-  "source": "/*\n * CDF contract. Copyright © 2020 by Opyn.co .\n * Author: Aparna Krishnan <aparna@opyn.co>\n */\npragma solidity 0.5.16;\n\nimport \"./SafeSignedFloatMath.sol\";\n\ncontract MockSafeSignedFloatMath {\n    using SafeSignedFloatMath for int256;\n\n    /**\n     * @dev Multiplies two signed integers, reverts on overflow.\n     */\n    function mul(int256 a, int256 b) internal pure returns (int256) {\n        return a.mul(b);\n    }\n\n    /**\n     * @dev Integer division of two signed integers truncating the quotient, reverts on division by zero.\n     */\n    function div(int256 a, int256 b) internal pure returns (int256) {\n        return a.div(b);\n    }\n\n    /**\n     * @dev Subtracts two signed integers, reverts on overflow.\n     */\n    function sub(int256 a, int256 b) internal pure returns (int256) {\n        return a.sub(b);\n    }\n\n    /**\n     * @dev Adds two signed integers, reverts on overflow.\n     */\n    function add(int256 a, int256 b) internal pure returns (int256) {\n        return a.add(b);\n    }\n\n     /**\n     * @dev Returns the remainder of dividing two signed integers.\n     */\n    function mod(int256 a, int256 b) internal pure returns (int256) {\n        return a.mod(b);\n    }\n}",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "mul",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "div",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "sub",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "add",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "a",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "b",
+          "type": "int256"
+        }
+      ],
+      "name": "mod",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"int256\",\"name\":\"a\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"b\",\"type\":\"int256\"}],\"name\":\"add\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"int256\",\"name\":\"a\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"b\",\"type\":\"int256\"}],\"name\":\"div\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"int256\",\"name\":\"a\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"b\",\"type\":\"int256\"}],\"name\":\"mod\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"int256\",\"name\":\"a\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"b\",\"type\":\"int256\"}],\"name\":\"mul\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"int256\",\"name\":\"a\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"b\",\"type\":\"int256\"}],\"name\":\"sub\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"add(int256,int256)\":{\"details\":\"Adds two signed integers, reverts on overflow.\"},\"div(int256,int256)\":{\"details\":\"Integer division of two signed integers truncating the quotient, reverts on division by zero.\"},\"mod(int256,int256)\":{\"details\":\"Returns the remainder of dividing two signed integers.\"},\"mul(int256,int256)\":{\"details\":\"Multiplies two signed integers, reverts on overflow.\"},\"sub(int256,int256)\":{\"details\":\"Subtracts two signed integers, reverts on overflow.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/MockSafeSignedFloatMath.sol\":\"MockSafeSignedFloatMath\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/MockSafeSignedFloatMath.sol\":{\"keccak256\":\"0x61cf50575b305d7451c5832710e9482354ab07682d9b1183f3e6c67aeb1fa20a\",\"urls\":[\"bzz-raw://7d1b7b5c632a972685c018732735c849067bc95c290be627756cdbb8f91eef96\",\"dweb:/ipfs/Qmdd9x919rvk32HgjfLn7izBKiZ583aYC7Pw6TBiKM1C3M\"]},\"/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/SafeSignedFloatMath.sol\":{\"keccak256\":\"0xa263bb6d25570717a4445cee9d15182a825702aa913366376f322f6e864f4f3d\",\"urls\":[\"bzz-raw://3b67c84e8a270334ff99878d93bfdcc73bdba5227051b149d8b982412a776e4e\",\"dweb:/ipfs/QmaoDHYiZns1EEgPzH3v2c5z13rqmdcxLg2bbRe2YxVEzo\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506107b0806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c806324e289281461005c57806343509138146100a8578063a5f3c23b146100f4578063adefc37b14610140578063bbe93d911461018c575b600080fd5b6100926004803603604081101561007257600080fd5b8101908080359060200190929190803590602001909291905050506101d8565b6040518082815260200191505060405180910390f35b6100de600480360360408110156100be57600080fd5b8101908080359060200190929190803590602001909291905050506101f5565b6040518082815260200191505060405180910390f35b61012a6004803603604081101561010a57600080fd5b810190808035906020019092919080359060200190929190505050610212565b6040518082815260200191505060405180910390f35b6101766004803603604081101561015657600080fd5b81019080803590602001909291908035906020019092919050505061022f565b6040518082815260200191505060405180910390f35b6101c2600480360360408110156101a257600080fd5b81019080803590602001909291908035906020019092919050505061024c565b6040518082815260200191505060405180910390f35b60006101ed828461026990919063ffffffff16565b905092915050565b600061020a82846102b390919063ffffffff16565b905092915050565b600061022782846103e790919063ffffffff16565b905092915050565b6000610244828461047590919063ffffffff16565b905092915050565b6000610261828461050390919063ffffffff16565b905092915050565b60006102ab83836040518060400160405280601881526020017f536166654d6174683a206d6f64756c6f206279207a65726f000000000000000081525061062d565b905092915050565b60008082141561032b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f5369676e6564536166654d6174683a206469766973696f6e206279207a65726f81525060200191505060405180910390fd5b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8214801561037957507f800000000000000000000000000000000000000000000000000000000000000083145b156103cf576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806107106021913960400191505060405180910390fd5b60008284816103da57fe5b0590508091505092915050565b6000808284019050600083121580156104005750838112155b80610416575060008312801561041557508381125b5b61046b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806106ef6021913960400191505060405180910390fd5b8091505092915050565b60008082840390506000831215801561048e5750838113155b806104a457506000831280156104a357508381135b5b6104f9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001806107586024913960400191505060405180910390fd5b8091505092915050565b6000808314156105165760009050610627565b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8314801561056457507f800000000000000000000000000000000000000000000000000000000000000082145b156105ba576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260278152602001806107316027913960400191505060405180910390fd5b60008284029050828482816105cb57fe5b0514610622576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260278152602001806107316027913960400191505060405180910390fd5b809150505b92915050565b60008083141582906106da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561069f578082015181840152602081019050610684565b50505050905090810190601f1680156106cc5780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b508284816106e457fe5b079050939250505056fe5369676e6564536166654d6174683a206164646974696f6e206f766572666c6f775369676e6564536166654d6174683a206469766973696f6e206f766572666c6f775369676e6564536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f775369676e6564536166654d6174683a207375627472616374696f6e206f766572666c6f77a265627a7a7231582007d4898befd15d1ba18b19c46df1c729899e834acd7987a24fc840680f782fcf64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c806324e289281461005c57806343509138146100a8578063a5f3c23b146100f4578063adefc37b14610140578063bbe93d911461018c575b600080fd5b6100926004803603604081101561007257600080fd5b8101908080359060200190929190803590602001909291905050506101d8565b6040518082815260200191505060405180910390f35b6100de600480360360408110156100be57600080fd5b8101908080359060200190929190803590602001909291905050506101f5565b6040518082815260200191505060405180910390f35b61012a6004803603604081101561010a57600080fd5b810190808035906020019092919080359060200190929190505050610212565b6040518082815260200191505060405180910390f35b6101766004803603604081101561015657600080fd5b81019080803590602001909291908035906020019092919050505061022f565b6040518082815260200191505060405180910390f35b6101c2600480360360408110156101a257600080fd5b81019080803590602001909291908035906020019092919050505061024c565b6040518082815260200191505060405180910390f35b60006101ed828461026990919063ffffffff16565b905092915050565b600061020a82846102b390919063ffffffff16565b905092915050565b600061022782846103e790919063ffffffff16565b905092915050565b6000610244828461047590919063ffffffff16565b905092915050565b6000610261828461050390919063ffffffff16565b905092915050565b60006102ab83836040518060400160405280601881526020017f536166654d6174683a206d6f64756c6f206279207a65726f000000000000000081525061062d565b905092915050565b60008082141561032b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f5369676e6564536166654d6174683a206469766973696f6e206279207a65726f81525060200191505060405180910390fd5b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8214801561037957507f800000000000000000000000000000000000000000000000000000000000000083145b156103cf576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806107106021913960400191505060405180910390fd5b60008284816103da57fe5b0590508091505092915050565b6000808284019050600083121580156104005750838112155b80610416575060008312801561041557508381125b5b61046b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806106ef6021913960400191505060405180910390fd5b8091505092915050565b60008082840390506000831215801561048e5750838113155b806104a457506000831280156104a357508381135b5b6104f9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001806107586024913960400191505060405180910390fd5b8091505092915050565b6000808314156105165760009050610627565b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8314801561056457507f800000000000000000000000000000000000000000000000000000000000000082145b156105ba576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260278152602001806107316027913960400191505060405180910390fd5b60008284029050828482816105cb57fe5b0514610622576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260278152602001806107316027913960400191505060405180910390fd5b809150505b92915050565b60008083141582906106da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561069f578082015181840152602081019050610684565b50505050905090810190601f1680156106cc5780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b508284816106e457fe5b079050939250505056fe5369676e6564536166654d6174683a206164646974696f6e206f766572666c6f775369676e6564536166654d6174683a206469766973696f6e206f766572666c6f775369676e6564536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f775369676e6564536166654d6174683a207375627472616374696f6e206f766572666c6f77a265627a7a7231582007d4898befd15d1ba18b19c46df1c729899e834acd7987a24fc840680f782fcf64736f6c63430005100032",
+  "sourceMap": "161:1029:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:1029:2;;;;;;;",
+  "deployedSourceMap": "161:1029:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:1029:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1092:96;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1092:96:2;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;548;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;548:96:2;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;907;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;907:96:2;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;730;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;730:96:2;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;324;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;324:96:2;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1092;1148:6;1173:8;1179:1;1173;:5;;:8;;;;:::i;:::-;1166:15;;1092:96;;;;:::o;548:::-;604:6;629:8;635:1;629;:5;;:8;;;;:::i;:::-;622:15;;548:96;;;;:::o;907:::-;963:6;988:8;994:1;988;:5;;:8;;;;:::i;:::-;981:15;;907:96;;;;:::o;730:::-;786:6;811:8;817:1;811;:5;;:8;;;;:::i;:::-;804:15;;730:96;;;;:::o;324:::-;380:6;405:8;411:1;405;:5;;:8;;;;:::i;:::-;398:15;;324:96;;;;:::o;2508:125:4:-;2564:6;2589:37;2593:1;2596;2589:37;;;;;;;;;;;;;;;;;:3;:37::i;:::-;2582:44;;2508:125;;;;:::o;1137:298::-;1193:6;1224:1;1219;:6;;1211:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1300:2;1295:1;:7;:27;;;;;326:7;1306:1;:16;1295:27;1293:30;1272:110;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1393:8;1408:1;1404;:5;;;;;;1393:16;;1427:1;1420:8;;;1137:298;;;;:::o;1849:244::-;1905:6;1923:8;1938:1;1934;:5;1923:16;;1976:1;1971;:6;;:16;;;;;1986:1;1981;:6;;1971:16;1970:38;;;;1997:1;1993;:5;:14;;;;;2006:1;2002;:5;1993:14;1970:38;1949:118;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2085:1;2078:8;;;1849:244;;;;:::o;1521:247::-;1577:6;1595:8;1610:1;1606;:5;1595:16;;1648:1;1643;:6;;:16;;;;;1658:1;1653;:6;;1643:16;1642:38;;;;1669:1;1665;:5;:14;;;;;1678:1;1674;:5;1665:14;1642:38;1621:121;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1760:1;1753:8;;;1521:247;;;;:::o;421:588::-;477:6;722:1;717;:6;713:45;;;746:1;739:8;;;;713:45;796:2;791:1;:7;:27;;;;;326:7;802:1;:16;791:27;789:30;768:116;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;895:8;910:1;906;:5;895:16;;938:1;933;929;:5;;;;;;:10;921:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1001:1;994:8;;;421:588;;;;;:::o;3068:190::-;3182:6;3213:1;3208;:6;;3216:12;3200:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;3200:29:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3250:1;3246;:5;;;;;;3239:12;;3068:190;;;;;:::o",
+  "source": "/*\n * CDF contract. Copyright © 2020 by Opyn.co .\n * Author: Aparna Krishnan <aparna@opyn.co>\n */\npragma solidity 0.5.16;\n\nimport \"./SafeSignedFloatMath.sol\";\n\ncontract MockSafeSignedFloatMath {\n    using SafeSignedFloatMath for int256;\n\n    /**\n     * @dev Multiplies two signed integers, reverts on overflow.\n     */\n    function mul(int256 a, int256 b) external pure returns (int256) {\n        return a.mul(b);\n    }\n\n    /**\n     * @dev Integer division of two signed integers truncating the quotient, reverts on division by zero.\n     */\n    function div(int256 a, int256 b) external pure returns (int256) {\n        return a.div(b);\n    }\n\n    /**\n     * @dev Subtracts two signed integers, reverts on overflow.\n     */\n    function sub(int256 a, int256 b) external pure returns (int256) {\n        return a.sub(b);\n    }\n\n    /**\n     * @dev Adds two signed integers, reverts on overflow.\n     */\n    function add(int256 a, int256 b) external pure returns (int256) {\n        return a.add(b);\n    }\n\n    /**\n     * @dev Returns the remainder of dividing two signed integers.\n     */\n    function mod(int256 a, int256 b) external pure returns (int256) {\n        return a.mod(b);\n    }\n}\n",
   "sourcePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/MockSafeSignedFloatMath.sol",
   "ast": {
     "absolutePath": "/Users/aparnakrishnan/Desktop/Opyn/Black-Scholes/contracts/MockSafeSignedFloatMath.sol",
@@ -34,7 +165,7 @@
         "id": 72,
         "nodeType": "ImportDirective",
         "scope": 152,
-        "sourceUnit": 665,
+        "sourceUnit": 669,
         "src": "124:35:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -59,10 +190,10 @@
               "id": 73,
               "name": "SafeSignedFloatMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 664,
+              "referencedDeclaration": 668,
               "src": "206:19:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeSignedFloatMath_$664",
+                "typeIdentifier": "t_contract$_SafeSignedFloatMath_$668",
                 "typeString": "library SafeSignedFloatMath"
               }
             },
@@ -130,7 +261,7 @@
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 507,
+                      "referencedDeclaration": 511,
                       "src": "405:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -261,7 +392,7 @@
             "src": "324:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
@@ -314,7 +445,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 546,
+                      "referencedDeclaration": 550,
                       "src": "629:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -445,7 +576,7 @@
             "src": "548:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
@@ -498,7 +629,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 585,
+                      "referencedDeclaration": 589,
                       "src": "811:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -629,7 +760,7 @@
             "src": "730:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
@@ -682,7 +813,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 624,
+                      "referencedDeclaration": 628,
                       "src": "988:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -813,13 +944,13 @@
             "src": "907:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
               "id": 149,
               "nodeType": "Block",
-              "src": "1157:32:2",
+              "src": "1156:32:2",
               "statements": [
                 {
                   "expression": {
@@ -832,7 +963,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 139,
-                        "src": "1180:1:2",
+                        "src": "1179:1:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_int256",
                           "typeString": "int256"
@@ -853,7 +984,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 137,
-                        "src": "1174:1:2",
+                        "src": "1173:1:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_int256",
                           "typeString": "int256"
@@ -866,8 +997,8 @@
                       "lValueRequested": false,
                       "memberName": "mod",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 640,
-                      "src": "1174:5:2",
+                      "referencedDeclaration": 644,
+                      "src": "1173:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
                         "typeString": "function (int256,int256) pure returns (int256)"
@@ -881,7 +1012,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1174:8:2",
+                    "src": "1173:8:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -890,7 +1021,7 @@
                   "functionReturnParameters": 143,
                   "id": 148,
                   "nodeType": "Return",
-                  "src": "1167:15:2"
+                  "src": "1166:15:2"
                 }
               ]
             },
@@ -911,7 +1042,7 @@
                   "name": "a",
                   "nodeType": "VariableDeclaration",
                   "scope": 150,
-                  "src": "1106:8:2",
+                  "src": "1105:8:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -922,7 +1053,7 @@
                     "id": 136,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1106:6:2",
+                    "src": "1105:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -937,7 +1068,7 @@
                   "name": "b",
                   "nodeType": "VariableDeclaration",
                   "scope": 150,
-                  "src": "1116:8:2",
+                  "src": "1115:8:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -948,7 +1079,7 @@
                     "id": 138,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1116:6:2",
+                    "src": "1115:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -958,7 +1089,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1105:20:2"
+              "src": "1104:20:2"
             },
             "returnParameters": {
               "id": 143,
@@ -970,7 +1101,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 150,
-                  "src": "1149:6:2",
+                  "src": "1148:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -981,7 +1112,7 @@
                     "id": 141,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1149:6:2",
+                    "src": "1148:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -991,17 +1122,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1148:8:2"
+              "src": "1147:8:2"
             },
             "scope": 151,
-            "src": "1093:96:2",
+            "src": "1092:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           }
         ],
         "scope": 152,
-        "src": "161:1030:2"
+        "src": "161:1029:2"
       }
     ],
     "src": "99:1092:2"
@@ -1032,7 +1163,7 @@
         "id": 72,
         "nodeType": "ImportDirective",
         "scope": 152,
-        "sourceUnit": 665,
+        "sourceUnit": 669,
         "src": "124:35:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1057,10 +1188,10 @@
               "id": 73,
               "name": "SafeSignedFloatMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 664,
+              "referencedDeclaration": 668,
               "src": "206:19:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeSignedFloatMath_$664",
+                "typeIdentifier": "t_contract$_SafeSignedFloatMath_$668",
                 "typeString": "library SafeSignedFloatMath"
               }
             },
@@ -1128,7 +1259,7 @@
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 507,
+                      "referencedDeclaration": 511,
                       "src": "405:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -1259,7 +1390,7 @@
             "src": "324:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
@@ -1312,7 +1443,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 546,
+                      "referencedDeclaration": 550,
                       "src": "629:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -1443,7 +1574,7 @@
             "src": "548:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
@@ -1496,7 +1627,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 585,
+                      "referencedDeclaration": 589,
                       "src": "811:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -1627,7 +1758,7 @@
             "src": "730:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
@@ -1680,7 +1811,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 624,
+                      "referencedDeclaration": 628,
                       "src": "988:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
@@ -1811,13 +1942,13 @@
             "src": "907:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           },
           {
             "body": {
               "id": 149,
               "nodeType": "Block",
-              "src": "1157:32:2",
+              "src": "1156:32:2",
               "statements": [
                 {
                   "expression": {
@@ -1830,7 +1961,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 139,
-                        "src": "1180:1:2",
+                        "src": "1179:1:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_int256",
                           "typeString": "int256"
@@ -1851,7 +1982,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 137,
-                        "src": "1174:1:2",
+                        "src": "1173:1:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_int256",
                           "typeString": "int256"
@@ -1864,8 +1995,8 @@
                       "lValueRequested": false,
                       "memberName": "mod",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 640,
-                      "src": "1174:5:2",
+                      "referencedDeclaration": 644,
+                      "src": "1173:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_int256_$bound_to$_t_int256_$",
                         "typeString": "function (int256,int256) pure returns (int256)"
@@ -1879,7 +2010,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1174:8:2",
+                    "src": "1173:8:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -1888,7 +2019,7 @@
                   "functionReturnParameters": 143,
                   "id": 148,
                   "nodeType": "Return",
-                  "src": "1167:15:2"
+                  "src": "1166:15:2"
                 }
               ]
             },
@@ -1909,7 +2040,7 @@
                   "name": "a",
                   "nodeType": "VariableDeclaration",
                   "scope": 150,
-                  "src": "1106:8:2",
+                  "src": "1105:8:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1920,7 +2051,7 @@
                     "id": 136,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1106:6:2",
+                    "src": "1105:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -1935,7 +2066,7 @@
                   "name": "b",
                   "nodeType": "VariableDeclaration",
                   "scope": 150,
-                  "src": "1116:8:2",
+                  "src": "1115:8:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1946,7 +2077,7 @@
                     "id": 138,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1116:6:2",
+                    "src": "1115:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -1956,7 +2087,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1105:20:2"
+              "src": "1104:20:2"
             },
             "returnParameters": {
               "id": 143,
@@ -1968,7 +2099,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 150,
-                  "src": "1149:6:2",
+                  "src": "1148:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1979,7 +2110,7 @@
                     "id": 141,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1149:6:2",
+                    "src": "1148:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -1989,17 +2120,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1148:8:2"
+              "src": "1147:8:2"
             },
             "scope": 151,
-            "src": "1093:96:2",
+            "src": "1092:96:2",
             "stateMutability": "pure",
             "superFunction": null,
-            "visibility": "internal"
+            "visibility": "external"
           }
         ],
         "scope": 152,
-        "src": "161:1030:2"
+        "src": "161:1029:2"
       }
     ],
     "src": "99:1092:2"
@@ -2008,11 +2139,34 @@
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
-  "schemaVersion": "3.2.0",
-  "updatedAt": "2020-06-03T00:58:17.518Z",
+  "networks": {
+    "1591212033066": {
+      "events": {},
+      "links": {},
+      "address": "0x58846814dC994d297FcE27513A37572119F8C354",
+      "transactionHash": "0x34d53ce49d96a56e674144e4842993e888e74312bee7a4c930827477e44c50a7"
+    }
+  },
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2020-06-03T22:45:40.736Z",
   "devdoc": {
-    "methods": {}
+    "methods": {
+      "add(int256,int256)": {
+        "details": "Adds two signed integers, reverts on overflow."
+      },
+      "div(int256,int256)": {
+        "details": "Integer division of two signed integers truncating the quotient, reverts on division by zero."
+      },
+      "mod(int256,int256)": {
+        "details": "Returns the remainder of dividing two signed integers."
+      },
+      "mul(int256,int256)": {
+        "details": "Multiplies two signed integers, reverts on overflow."
+      },
+      "sub(int256,int256)": {
+        "details": "Subtracts two signed integers, reverts on overflow."
+      }
+    }
   },
   "userdoc": {
     "methods": {}

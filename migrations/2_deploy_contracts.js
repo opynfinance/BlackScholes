@@ -3,7 +3,7 @@ const NormalCDF = artifacts.require('NormalCDF.sol');
 const MockMath = artifacts.require('MockSafeSignedFloatMath.sol');
 const SafeSignedFloatMath = artifacts.require('SafeSignedFloatMath.sol')
 
-module.exports = function (deployer) => {
+module.exports = function (deployer) {
     deployer.then( async () => {
         await deployer.deploy(SafeSignedFloatMath);
         await deployer.link(SafeSignedFloatMath, MockMath);

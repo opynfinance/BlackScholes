@@ -107,6 +107,7 @@ library SafeSignedFloatMath {
         string memory errorMessage
     ) internal pure returns (int256) {
         require(b != 0, errorMessage);
+        // TODO: verify if solidity mod is correct.
         return a % b;
     }
 }
