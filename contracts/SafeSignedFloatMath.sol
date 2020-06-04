@@ -2,7 +2,9 @@
  * Safe Float Math contract. Copyright © 2020 by Opyn.co .
  * Author: Opyn + Code Modified from Open Zeppelin
  */
-pragma solidity 0.5.16;
+pragma solidity 0.6.0;
+
+import {SignedSafeMath} from "@openzeppelin/contracts/math/SignedSafeMath.sol";
 
 /**
  * @title SafeSignedFloatMath
@@ -10,28 +12,23 @@ pragma solidity 0.5.16;
  */
 
 library SafeSignedFloatMath {
-    int256 private constant _INT256_MIN = -2**255;
+    using SignedSafeMath for int256;
+
+    // Assumes 18 digitis precision of decimals.
+    int256 constant decimals = 1e18;
 
     /**
-     * @dev Multiplies two signed integers, reverts on overflow.
+     * @dev Multiplies two signed fixed points and maintains precision.
+     * rounds down or up based on last digit.
+     * reverts on overflow.
+     * Eg. 0.4 * 0.4 = 0.16,
+     * Input: a = 4 * 1e18, b = 4 * 1e18
+     * Output: 16 * 1e18
+     *
      */
     function mul(int256 a, int256 b) internal pure returns (int256) {
-        // Gas optimization: this is cheaper than requiring 'a' not being zero, but the
-        // benefit is lost if 'b' is also tested.
-        // See: https://github.com/OpenZeppelin/openzeppelin-contracts/pull/522
-        if (a == 0) {
-            return 0;
-        }
-
-        require(
-            !(a == -1 && b == _INT256_MIN),
-            "SignedSafeMath: multiplication overflow"
-        );
-
-        int256 c = a * b;
-        require(c / a == b, "SignedSafeMath: multiplication overflow");
-
-        return c;
+        int256 c = a.mul(b);
+        return c.add(decimals.div(2)).div(decimals);
     }
 
     /**
@@ -39,10 +36,10 @@ library SafeSignedFloatMath {
      */
     function div(int256 a, int256 b) internal pure returns (int256) {
         require(b != 0, "SignedSafeMath: division by zero");
-        require(
-            !(b == -1 && a == _INT256_MIN),
-            "SignedSafeMath: division overflow"
-        );
+        // require(
+        //     !(b == -1 && a == _INT256_MIN),
+        //     "SignedSafeMath: division overflow"
+        // );
 
         int256 c = a / b;
 
